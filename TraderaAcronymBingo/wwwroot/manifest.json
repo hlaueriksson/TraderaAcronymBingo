@@ -1,6 +1,6 @@
 {
-  "name": "TraderaAcronymBingo",
-  "short_name": "TraderaAcronymBingo",
+  "name": "Tradera Acronym Bingo",
+  "short_name": "TAB",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
