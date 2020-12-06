@@ -1,0 +1,47 @@
+﻿@inject IJSRuntime JS
+
+<div class="board">
+    @for (var i = 0; i < 25; i++)
+    {
+        var index = i;
+        <Square @key=i State=@(State.Squares[index]) ClickHandler="@(() => HandleClick(index))" />
+    }
+</div>
+
+<ul>
+    @foreach (var square in State.GetSelectedSquares())
+    {
+        <li><i>@square.Timestamp.ToString("HH:mm:ss")</i>: <b>@square.Acronym.Value</b> - @square.Acronym.Description</li>
+    }
+</ul>
+
+@if (State.HasWon())
+{
+    <h2>Winner, winner, chicken dinner 🎉</h2>
+    <p>📷 Take a screenshot of this great achievement and share in the Tradera Slack!</p>
+    <p>🔁 Reload this page to play again.</p>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        State = new BoardState();
+    }
+
+    private async Task HandleClick(int index)
+    {
+        var square = State.Squares[index];
+
+        if (State.HasWon() && !square.Selected) return;
+
+        square.Toggle();
+
+        if (State.HasWon())
+        {
+            await JS.InvokeVoidAsync("fireworks");
+            await JS.InvokeVoidAsync("bingo");
+        }
+    }
+
+    BoardState State;
+}
