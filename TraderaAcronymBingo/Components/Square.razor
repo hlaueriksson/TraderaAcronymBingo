@@ -1,4 +1,6 @@
-﻿<div class="@CssClass" @onclick="@ClickHandler" title="@State.Acronym.Description">@State.Acronym.Value</div>
+﻿<div class="@CssClass" @onclick="@ClickHandler">
+    <abbr title="@State.Acronym.Description">@State.Acronym.Value</abbr>
+</div>
 
 @functions {
     [Parameter]

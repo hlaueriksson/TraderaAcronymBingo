@@ -1,6 +1,6 @@
 ﻿.square {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #fefca6;
+    border: 1px solid #b0b0b0;
     width: 100px;
     height: 100px;
     font-size: 25px;
@@ -12,9 +12,9 @@
 }
 
     .square:hover {
-        background-color: rgba(106, 202, 9, 0.8);
+        background-color: #0080af;
     }
 
 .selected {
-    background-color: rgba(106, 202, 9, 0.8);
+    background-color: #00936a;
 }

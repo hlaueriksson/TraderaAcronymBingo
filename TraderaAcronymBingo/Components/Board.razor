@@ -1,26 +1,38 @@
 ﻿@inject IJSRuntime JS
 
-<div class="board">
-    @for (var i = 0; i < 25; i++)
-    {
-        var index = i;
-        <Square @key=i State=@(State.Squares[index]) ClickHandler="@(() => HandleClick(index))" />
-    }
+<div class="row">
+    <div class="col">
+        <div class="board">
+            @for (var i = 0; i < 25; i++)
+            {
+                var index = i;
+                <Square @key=i State=@(State.Squares[index]) ClickHandler="@(() => HandleClick(index))" />
+            }
+        </div>
+    </div>
+    <div class="col">
+        <dl>
+            @foreach (var square in State.GetSelectedSquares())
+            {
+                <dt>@square.Acronym.Value</dt>
+                <dd>
+                    @square.Acronym.Description<br />
+                    <em class="text-muted"><time>@square.Timestamp.ToString("HH:mm:ss")</time></em>
+                </dd>
+            }
+        </dl>
+    </div>
 </div>
-
-<ul>
-    @foreach (var square in State.GetSelectedSquares())
-    {
-        <li><i>@square.Timestamp.ToString("HH:mm:ss")</i>: <b>@square.Acronym.Value</b> - @square.Acronym.Description</li>
-    }
-</ul>
-
-@if (State.HasWon())
-{
-    <h2>Winner, winner, chicken dinner 🎉</h2>
-    <p>📷 Take a screenshot of this great achievement and share in the Tradera Slack!</p>
-    <p>🔁 Reload this page to play again.</p>
-}
+<div class="row">
+    <div class="col">
+        @if (State.HasWon())
+        {
+            <h2>BINGO 🎉</h2>
+            <p>📷 Take a screenshot of this great achievement and share in the Tradera Slack!</p>
+            <p>🔁 Reload this page to play again.</p>
+        }
+    </div>
+</div>
 
 @code {
     protected override void OnInitialized()
