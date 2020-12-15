@@ -1,0 +1,37 @@
+/* /Components/Board.razor.rz.scp.css */
+.board[b-e903nyzljt] {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+    width: 520px;
+    height: 520px;
+    border-radius: 2%;
+}
+
+button[b-e903nyzljt] {
+    border-radius: 5%;
+    margin: 10px;
+}
+/* /Components/Square.razor.rz.scp.css */
+.square[b-qbkfp6utqr] {
+    background-color: #fefca6;
+    border: 1px solid #b0b0b0;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+    .square:hover[b-qbkfp6utqr] {
+        background-color: #0080af;
+    }
+
+.selected[b-qbkfp6utqr] {
+    background-color: #00936a;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
