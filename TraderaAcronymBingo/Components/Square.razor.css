@@ -1,14 +1,14 @@
 ﻿.square {
     background-color: #fefca6;
     border: 1px solid #b0b0b0;
-    width: 100px;
-    height: 100px;
-    font-size: 25px;
     text-align: center;
     vertical-align: middle;
-    line-height: 100px;
     border-radius: 5%;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
 }
 
     .square:hover {
@@ -17,4 +17,40 @@
 
 .selected {
     background-color: #00936a;
+}
+
+@media (min-width: 576px) {
+    .square {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .square {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 992px) {
+    .square {
+        width: 110px;
+        height: 110px;
+        line-height: 110px;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .square {
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+        font-size: 38px;
+    }
 }

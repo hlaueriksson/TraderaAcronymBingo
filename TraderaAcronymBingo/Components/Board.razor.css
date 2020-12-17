@@ -3,12 +3,40 @@
     grid-template-columns: auto auto auto auto auto;
     background-color: #f9f9f9;
     padding: 10px;
-    width: 520px;
-    height: 520px;
     border-radius: 2%;
+    width: 270px;
+    height: 270px;
 }
 
 button {
     border-radius: 5%;
     margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .board {
+        width: 370px;
+        height: 370px;
+    }
+}
+
+@media (min-width: 768px) {
+    .board {
+        width: 470px;
+        height: 470px;
+    }
+}
+
+@media (min-width: 992px) {
+    .board {
+        width: 570px;
+        height: 570px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .board {
+        width: 670px;
+        height: 670px;
+    }
 }
