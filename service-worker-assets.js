@@ -69,7 +69,7 @@
       "url": "_framework\/dotnet.5.0.0.js"
     },
     {
-      "hash": "sha256-EhTxbaib5MpI3goaEA6addDnjIg1KrWPewM+euSuH6o=",
+      "hash": "sha256-Y+b8ungRrNcCURGlUOGMziMm5IF+Te7nZdtihArfX2M=",
       "url": "TraderaAcronymBingo.styles.css"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-kz+nsODx5AdHNTy\/RX9FWflJCOkodK1iFDzRYeaZ6WE=",
+      "hash": "sha256-FcI2UvNUU7DkeB5WNUtMtmjBavHLUB3Poq+gWBjqMwc=",
       "url": "_framework\/TraderaAcronymBingo.dll"
     },
     {
@@ -197,7 +197,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-8e+TEZN0NC8WfXFwl2Qd5+ebbFMrgG3sfc78YRkSq0w=",
+      "hash": "sha256-YrkkCvvMQ\/0RQ+ViuUf2nJyDXBx5iw8PC9Wb4bpMzwg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -205,5 +205,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "wiSwOHoV"
+  "version": "oCm9Z48a"
 };
